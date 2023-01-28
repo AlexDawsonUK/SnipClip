@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Guide - HiTechy SnipClip</title>
+		<meta name="description" content="SnipClip is a code snippet manager for Windows that sits in the system tray, uses little memory and doesn't mess with the clipboard.">
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="cache/fonts/Martel-Regular.woff2">
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="cache/fonts/Martel-Bold.woff2">
+		<link rel="stylesheet" href="cache/style.css">
+		<link rel="author" type="text/plain" href="humans.txt">
+		<meta name="apple-mobile-web-app-title" content="HiTechy SnipClip">
+		<meta name="referrer" content="no-referrer">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/fx32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/fx16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<meta name="msapplication-config" content="browserconfig.xml">
+		<meta name="theme-color" content="#f4f2d4">
+		<meta name="msapplication-config" content="browserconfig.xml">
+		<meta property="og:title" content="HiTechy SnipClip">
+		<meta property="og:description" content="SnipClip is a code snippet manager for Windows that sits in the system tray, uses little memory and doesn't mess with the clipboard.">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="en_us">
+		<meta property="og:url" content="https://snipclipapp.com/">
+		<meta property="og:image" content="images/banner.png">
+		<meta property="og:image:alt" content="Logo">
+		<script async src="cache/script.js"></script>
+	</head>
+	<body class="body">
+		<header class="header guide">
+			<a class="logo" href="index.html"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path fill="#455a64" d="M15 7h1v1h-1zM13 7h1v1h-1zM11 7h1v1h-1zM9 7h1v1H9z"/><path d="M12.45 10.1l-8-4.05A2.48 2.48 0 005 4.5a2.5 2.5 0 10-3.63 2.23l10.18 5.16A.98.98 0 0012 12a1 1 0 00.45-1.9z" fill="#d32f2f"/><path d="M2.5 3.5a1 1 0 011 1 1.04 1.04 0 01-1.45.9 1 1 0 01.45-1.9z" fill="#fafafa"/><path d="M12.9 3.55a1 1 0 00-1.35-.44L1.37 8.27A2.5 2.5 0 105 10.5a2.48 2.48 0 00-.55-1.55l8-4.06a1 1 0 00.44-1.34z" fill="#f44336"/><path d="M2.5 11.5a1 1 0 111-1 1 1 0 01-1 1z" fill="#fafafa"/></svg></a>
+			<h1 class="heading">HiTechy SnipClip</h1>
+			<h2 class="nav title">Version 1.35</h2>
+			<p class="subtitle">The Code Snippet Manager.</p>
+		</header>
+		<main class="main">
+			<hr>
+			<h2 class="subheading">Table of Contents</h2>
+			<ol>
+				<li class="toc"><a href="#abstract">Abstract</a>
+					<ol>
+						<li class="toc"><a href="#who">Who are HiTechy?</a></li>
+						<li class="toc"><a href="#what">What is SnipClip?</a></li>
+						<li class="toc"><a href="#why">Why the need for SnipClip?</a></li>
+					</ol>
+				</li>
+				<li class="toc"><a href="#introduction">Introduction</a>
+					<ol>
+						<li class="toc"><a href="#functionality">Core functionality</a></li>
+						<li class="toc"><a href="#features">Program features</a></li>
+						<li class="toc"><a href="#formats">Supported formats</a></li>
+						<li class="toc"><a href="#requirements">System requirements</a></li>
+						<li class="toc"><a href="#useful">Useful information</a></li>
+					</ol>
+				</li>
+				<li class="toc"><a href="#maintenance">Maintenance</a>
+					<ol>
+						<li class="toc"><a href="#purchase">Purchase license</a></li>
+						<li class="toc"><a href="#download">Download software</a></li>
+						<li class="toc"><a href="#installation">Installation wizard</a></li>
+						<li class="toc"><a href="#network">Network / Portable</a></li>
+						<li class="toc"><a href="#upgrade">Upgrade / Repair</a></li>
+						<li class="toc"><a href="#uninstall">Uninstall wizard</a></li>
+					</ol>
+				</li>
+				<li class="toc"><a href="#basics">Basics</a>
+					<ol>
+						<li class="toc"><a href="#started">Getting started</a></li>
+						<li class="toc"><a href="#activate">Activate product</a></li>
+						<li class="toc"><a href="#tray">System tray</a></li>
+						<li class="toc"><a href="#keyboard">Keyboard shortcuts</a></li>
+						<li class="toc"><a href="#dropzone">DropZone widget</a></li>
+						<li class="toc"><a href="#dialog">Dialog windows</a></li>
+						<li class="toc"><a href="#menus">System menus</a></li>
+					</ol>
+				</li>
+				<li class="toc"><a href="#advanced">Advanced</a>
+					<ol>
+						<li class="toc"><a href="#control">Control panel</a></li>
+						<li class="toc"><a href="#snippet">Snippet manager</a></li>
+						<li class="toc"><a href="#wizard">SnipClip wizard</a></li>
+						<li class="toc"><a href="#settings">Program settings</a></li>
+					</ol>
+				</li>
+				<li class="toc"><a href="#developers">Developers</a>
+					<ol>
+						<li class="toc"><a href="#database">Database details</a></li>
+						<li class="toc"><a href="#character">Character guide</a></li>
+						<li class="toc"><a href="#programming">Programming</a></li>
+					</ol>
+				</li>
+				<li class="toc"><a href="#support">Support</a>
+					<ol>
+						<li class="toc"><a href="#faq">FAQ listings</a></li>
+						<li class="toc"><a href="#new">What's new?</a></li>
+						<li class="toc"><a href="#history">Version history</a></li>
+						<li class="toc"><a href="#troubleshooter">Troubleshooter</a></li>
+						<li class="toc"><a href="#contact">Contact us</a></li>
+					</ol>
+				</li>
+				<li class="toc"><a href="#index">Index</a>
+					<ol>
+						<li class="toc"><a href="#glossary">Glossary of terms</a></li>
+						<li class="toc"><a href="#acknowledgements">Acknowledgements</a></li>
+						<li class="toc"><a href="#credits">Program credits</a></li>
+					</ol>
+				</li>
+			</ol>
+			<hr>
+			<h2 id="abstract" class="subheading">1. Abstract</h2>
+			<p class="copy">This document contains information about HiTechy SnipClip. It has been produced to act as a guide to the software and provides important information when installing and using the product. If you find that the information within this guide cannot help you with an existing issue, please feel free to contact our technical support advisors through our website. The information held within this help file will be updated on occasion to provide existing users with new information and features, as they are made available.</p>
+			<h2 id="who" class="subheading">1.1. Who are HiTechy?</h2>
+			<p class="copy">HiTechy is an Internet business which specialises in the production of software and services for website designers and developers, formed in 2007 to represent the change from producing free small utilities for various services it became a professional publisher of high quality commercial software and web design and development services. Before HiTechy was founded, AD2K-Ware was the brand we released free software and open source through. This group ran from 1998 - 2007 where it was closed and re-opened as HiTechy.</p>
+			<h2 id="what" class="subheading">1.3. What is SnipClip?</h2>
+			<p class="copy">HiTechy SnipClip is a code snippet manager. This means that it allows you to store and remember chunks of code or text. You may ask why you would want the software rather than just using text files or the clipboard. Well SnipClip can manage and organise your code snippets and has additional functionality developers will find useful in maintaining and creating code libraries. Not only this but it fully integrates with Windows to make accessing and using your snippets quick and easy.</p>
+			<h2 id="why" class="subheading">1.3. Why the need for SnipClip?</h2>
+			<p class="copy">Programming is hard work and often repetitive. Sometimes huge chunks of code you have produced can be reused from one project to another. But the question is how do you make it easy to manage and insert code when you need to? This is why HiTechy SnipClip exists. Its aim is to make coding easier and quicker than ever before. It saves your snippets of code into a single database which has tools to help maintain, fix and enhance your websites. It is editor independent so you can use your favorite text editor or <abbr class="abbr" title="Integrated Development Environment">IDE</abbr> using drag and drop, to import, export and share snippets.</p>
+			<hr>
+			<h2 id="introduction" class="subheading">2. Introduction</h2>
+			<p class="copy">This section of the documentation will give you a general introduction to the programs functionality. You will learn exactly what the program can and cannot do so that you know what makes this software better than others you can find on the Internet. Also this information will act as a guide to allow you to determine if our product will allow you to achieve your goals and requirements.</p>
+			<h2 id="functionality" class="subheading">2.1. Core functionality</h2>
+			<dl class="pb">
+				<dt class="core">Control Panel</dt>
+				<dd class="panel">The products default window which allows individual module selection.</dd>
+				<dt class="core">Snippet Manager</dt>
+				<dd class="panel">This allows you to control and manage user defined snippets of code.</dd>
+			</dl>
+			<h2 id="features" class="subheading">2.2. Program features</h2>
+			<ul class="lists">
+				<li class="features">Main Program:</li>
+				<ul>
+					<li class="feature">Full compatibility for Microsoft Windows Vista (onwards) and Aero Glass.</li>
+					<li class="feature">Application icon in the system tray which can be hidden for quick access.</li>
+					<li class="feature">Simple control panel to allow you to access individual program modules.</li>
+					<li class="feature">Enable or disable the program quickly from the default system menu.</li>
+					<li class="feature">Check for updates either manually or automatically within the program.</li>
+					<li class="feature">Access to these help files from the system menu, help button or <kbd class="kbd">F1</kbd> key.</li>
+					<li class="feature">Version and copyright information accessible within the system menu.</li>
+					<li class="feature">Tips available for modules by hovering over control panel icons.</li>
+					<li class="feature">Change the default language used by the product through language packs.</li>
+					<li class="feature">Ability to disable Aero Glass and revert to Windows Basic visual mode.</li>
+					<li class="feature">Load HiTechy SnipClip on Windows Startup through the Windows registry.</li>
+					<li class="feature">Fully customisable pop-up system hotkey (Default: <kbd class="kbd">Ctrl</kbd>, <kbd class="kbd">Alt</kbd> and <kbd class="kbd">Ins</kbd>).</li>
+					<li class="feature">Force the Pop-up window to stay visible and on top of other windows.</li>
+					<li class="feature">Customise the DropZone size, widget position and 'always on top' status.</li>
+					<li class="feature">Try the program in a demonstration mode before you purchase the product.</li>
+					<li class="feature">SnipClip is a portable app. Just copy the exe and xml files to a USB disk.</li>
+				</ul>
+				<li class="features">Snippet Manager:</li>
+				<ul>
+					<li class="feature">Snippet settings stored in an open <abbr class="abbr" title="Extensible Markup Language">XML</abbr> format for easy external editing.</li>
+					<li class="feature">Fully enabled to run either on an individual <abbr class="abbr" title="Personal computer">PC</abbr> or shared using a network.</li>
+					<li class="feature">Ability to hold code snippets in containers for each individual user.</li>
+					<li class="feature">Share snippets with the entire network using an 'All Users' container.</li>
+					<li class="feature">Organise your code snippets by syntax language using categories.</li>
+					<li class="feature">Support for multiple custom defined syntax languages and plain text.</li>
+					<li class="feature">Automatic detection of imported code snippets using open <abbr class="abbr" title="Extensible Markup Language">XML</abbr> engine.</li>
+					<li class="feature">Language filters stored in open <abbr class="abbr" title="Extensible Markup Language">XML</abbr> format for easy external editing.</li>
+					<li class="feature">Open <abbr class="abbr" title="Extensible Markup Language">XML</abbr> database interoperable with Web JSON interchange format.</li>
+					<li class="feature">Create, edit and maintain folders for all snippets you create or import.</li>
+					<li class="feature">Produce, edit, delete and maintain code snippets which the program holds.</li>
+					<li class="feature">Rename or delete snippets and folders using <kbd class="kbd">F2</kbd> or <kbd class="kbd">Del</kbd> keyboard shortcuts.</li>
+					<li class="feature">Import and export code snippets or drag code and files to the DropZone.</li>
+					<li class="feature">Print or e-mail your source code directly from within the snippet manager.</li>
+				</ul>
+			</ul>
+			<h2 id="formats" class="subheading">2.3. Supported formats</h2>
+			<ul>
+				<li class="format">Text (Plain Text Format).</li>
+			</ul>
+			<h2 id="requirements" class="subheading">2.4. System requirements</h2>
+			<ul>
+				<li class="sysreq">Microsoft Windows 2000, XP or Vista.</li>
+				<li class="sysreq">500 <abbr class="abbr" title="Megahertz">MHZ</abbr> or faster <abbr class="abbr" title="Personal computer">PC</abbr> compatible <abbr class="abbr" title="Central processing unit">CPU</abbr>.</li>
+				<li class="sysreq">1 <abbr class="abbr" title="Megabytes">MB</abbr> <abbr class="abbr" title="Random access memory">RAM</abbr> / System memory available.</li>
+				<li class="sysreq">At least 1 <abbr class="abbr" title="Megabytes">MB</abbr> free hard disk space.</li>
+				<li class="sysreq">Microsoft Internet Explorer 6.0 or above.</li>
+				<li class="sysreq">Microsoft .NET Framework 3.5 installed.</li>
+			</ul>
+			<h2 id="useful" class="subheading">2.5. Useful information</h2>
+			<p class="copy">Please visit the <a href="http://www.hitechy.com" title="Official HiTechy website.">HiTechy</a> website at for product news, information and details of future releases.</p>
+			<hr>
+			<h2 id="maintenance" class="subheading">3. Maintenance</h2>
+			<p class="copy">The below section of this documentation contains detailed information on how to purchase, download and install HiTechy SnipClip. It will guide you through all of the steps required to get your copy of the program and have it up and ready to run on your computer system or network. If you are looking to troubleshoot your installation, please use the support section further in this document.</p>
+			<h2 id="purchase" class="subheading">3.1. Purchase license</h2>
+			<p class="copy">If you are ready to buy a licensed version of our product rather than use a trial (if available) or demo, visit our website and select the product from our list of available software. From there you will be able to find more information about the product and there will be a link to purchase the product. This link will redirect you to our payment processor (PayPal) who will manage your payment details. You will be required to enter credit card details (Or a payment method offered by PayPal) for the purchase to take place.</p>
+			<p class="copy">The price listed on the website will be the price you pay for the product; there are no hidden charges or subscriptions for using our services. Once payment has been received you will be redirected back to our homepage where a license key will be generated and emailed to you. Remember to keep the details safe as you will be required to use it each time you activate the product.</p>
+			<h2 id="download" class="subheading">3.2. Download software</h2>
+			<p class="copy">Downloading a copy of our products is very simple. If you have just purchased the product a download link will be provided in the e-mail sent to you. However new and existing users can also visit our website and download the product from its information pages. You can download a copy of the software to test out using the demo mode before purchasing a license, further details are mentioned below.</p>
+			<h2 id="installation" class="subheading">3.3. Installation</h2>
+			<p class="copy">To install HiTechy SnipClip, open the Setup file which you downloaded from our website. If you are using Microsoft Windows Vista, <abbr class="abbr" title="Universal access control">UAC</abbr> will ask your permission to install the product, you need to select Allow to be able to continue. If you are missing the .NET framework you will be presented with an error, to continue you must download and install the required framework from the Microsoft website (Depending on your Windows version, it might install automatically upon opening the application). The first page you will be presented with during installation is a welcome page. To continue click the next button. The next dialog contains our License Agreement (Also included further in this documentation). You must agree to the terms of usage to be able to continue.</p>
+			<p class="copy">Next is the components section. You can select what you would like the product to install, such as this documentation and program shortcuts. Next you can select where you would like to install the product and following that, where (or if any) shortcuts should be placed in your start menu. Once you press install the files will be copied to your hard drive and any associations or shortcuts will be made. Finally you can either select if you want the product to launch when setup closes, and press Finish to complete the installation.</p>
+			<h2 id="network" class="subheading">3.4. Network / Portable</h2>
+			<p class="copy">Because this product uses an open <abbr class="abbr" title="Extensible Markup Language">XML</abbr> format to record non general settings under each user / machines name, you can install this product to a network server and run the program from there. However as user specific settings for the program itself are saved into the Windows Registry, you will be required to adjust these settings and reactivate your copy on a per machine basis.</p>
+			<p class="copy">Also if you wish to use the product as a portable application, copying the required files to a portable <abbr class="abbr" title="Universal serial bus">USB</abbr> drive will work correctly, but you will need to adjust your personal settings on a per machine basis. Product activation will also need to reoccur for each machine. Remember that under the terms of the license you can only activate the amount of copies you are licensed to use.</p>
+			<h2 id="upgrade" class="subheading">3.5. Upgrade / Repair</h2>
+			<p class="copy">Upgrading a copy of the product is very simple, all you need to do is run the Setup program and install the product over the top of the existing application. Remember that you will NOT lose any existing changes you have made to your settings or any information contained within the products XML databases. It may however be worthwhile to backup your <abbr class="abbr" title="Extensible Markup Language">XML</abbr> data files from time to time or before upgrading / repairing an installation in case an error occurs to prevent data loss.</p>
+			<p class="copy">To repair the product, either run the Setup.exe file contained in the programs folder, or Go to your Programs Installed section of the control panel. For Windows 2000 or XP users this is located under Add/Remove Programs, in Windows Vista its under Program Features. When you launch this control panel applet you will be provided with a list of software you currently have installed.</p>
+			<p class="copy">Search down the list for HiTechy SnipClip and by selecting it there will be an option to change / repair the product. Select this option and follow the Installation instructions to repair the installation. However the repair wizard will not fix issues with either the registry settings or any manual editing you have done to the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> databases. If either of these have been corrupted we recommend going to a previous backup, debugging the code manually or reinstalling the program.</p>
+			<h2 id="uninstall" class="subheading">3.6. Uninstall wizard</h2>
+			<p class="copy">Sometimes you may wish to remove the program completely, if you wish to remove the product it can be done in two ways. Either run the Uninst.exe file contained in the programs folder, or Go to your Programs Installed section of the control panel. For Windows 2000 or XP users this is located under Add/Remove Programs, in Windows Vista its under Program Features. When you launch this control panel applet you will be provided with a list of software you have installed.</p>
+			<p class="copy">Search down the list for HiTechy SnipClip and there will be an option to uninstall the product. Select this option and the program removal wizard will begin. If you are using Windows Vista (or above), <abbr class="abbr" title="Universal access control">UAC</abbr> will ask your permission to remove the product, you need to select Continue to be able to continue. Once this step has been completed a message box will appear asking you to confirm if you really want to remove the product. If you select No, the wizard will exit upon confirmation through a message box.</p>
+			<p class="copy">If you select Yes, the product and ALL of its settings, user created files and <abbr class="abbr" title="Extensible Markup Language">XML</abbr> databases will be erased permanently. If you do not wish to lose this information, make a backup before you begin as everything you created will be destroyed. If there was a specific reason why you removed the product due to it lacking a feature or issues you had with the software, please contact technical support to help resolve the issues and make the product better for future versions.</p>
+			<hr>
+			<h2 id="basics" class="subheading">4. Basics</h2>
+			<p class="copy">Below is the getting started guide in this documentation. You will find general information which will help you to get the program running, activated and working with the general desktop environment. This part of the help file will explain how the application integrates into Microsoft Windows through the system tray, the desktop widget and using system hotkeys to show the programs control panel.</p>
+			<h2 id="started" class="subheading">4.1. Getting started</h2>
+			<p class="copy">Once the program has been installed, you can launch the product in many ways. The most common is through the start menu which unless specified otherwise will be listed within the HiTechy SnipClip folder. In Vista you can also search for 'SnipClip' using the Vista start menu search function. Also you may also be able to launch the program from the desktop or the quick launch bar if icons were created. Additionally you can launch the program directly from its program folder which will be listed as 'SnipClip.exe'.</p>
+			<h2 id="activate" class="subheading">4.2. Activate product</h2>
+			<p class="copy">When you first launch the product you will be required to activate HiTechy SnipClip. Reactivation must also occur if you format and reinstall Windows or if you change the machine in which the software is installed upon. The details of your activation will have been provided in the original e-mail you received when you first purchased the product. If you have lost these details you can request the information to be sent to you again from our website by providing the e-mail address you used to register the product.</p>
+			<p class="copy">If you do not want to purchase a license but rather try out the product before you decide if you want to buy a copy of the product, all you need to do is select the demo button on the activation window. Remember that the demonstration mode is only a working model of how the program will function; certain elements will be disabled including the ability for the program to save any snippets added into the program. After each session the program will return to the default state, ready to activate or run the demo again.</p>
+			<p class="copy">You will be required to enter the product key and then the e-mail address you used. You can only use the license information for the version of the product you have purchased otherwise you will be required to purchase an upgrade to the new version. If you have any problems activating the product, please check in the technical support section as there will be common answers to why activation fails. If however none of those options works for you, please contact technical support for assistance.</p>
+			<h2 id="tray" class="subheading">4.3. System tray</h2>
+			<p class="copy pb">When the product has been activated, HiTechy SnipClip will appear in the system tray. If you do not wish to see the icon it can be hidden through the start menu notification area or you can remove the icon completely within the program settings. The program is disabled if a grey icon rather than the default program icon is displayed. The software can be enabled and disabled using the system trays context menu or through the program settings. Left clicking on the system tray icon will launch the programs control panel pop-up, and clicking again will hide it. Right clicking the icon will launch a context menu with a list of the most commonly used functions.</p>
+			<h2 id="keyboard" class="subheading">4.4. Keyboard shortcuts</h2>
+			<p class="copy">By default HiTechy SnipClip has a single set of keyboard shortcuts. By pressing this combination of keys while the program is running you will find that the control panel for the software will pop-up on your desktop next to the system clock. The default key combination to launch the pop-up will be <kbd class="kbd">Ctrl</kbd>, <kbd class="kbd">Alt</kbd> and <kbd class="kbd">Ins</kbd> unless configured otherwise through the program settings dialog.</p>
+			<h2 id="dropzone" class="subheading">4.5. DropZone widget</h2>
+			<p class="copy">This section of the program is a desktop widget which floats either in the background or always on top of your system. It allows you to drag and drop any source code, text or compatible files so that SnipClip can attempt to identify the language using filters and store the code or file into a database for later usage. Essentially the Widget is a floating clipboard to push and place your snippets. If you have lost the location of the DropZone widget and it is set to display always on top, click on the button located in the top right hand corner of the title bar. You can relocate the DropZone widget by simply dragging and dropping it in a location of your choice.</p>
+			<h2 id="dialog" class="subheading">4.6. Dialog windows</h2>
+			<dl>
+				<dt class="dialog">About</dt>
+				<dd class="box">Provides version and copyright information about the product installed.</dd>
+				<dt class="dialog">DialogBox</dt>
+				<dd class="box">This appears when SnipClip requires information such as an e-mail address.</dd>
+				<dt class="dialog">DropZone</dt>
+				<dd class="box">A floating desktop tool for code or files to be dropped onto when importing.</dd>
+				<dt class="dialog">Import</dt>
+				<dd class="box">The wizard helps you select what to do with snippets you choose to import.</dd>
+				<dt class="dialog">License</dt>
+				<dd class="box">The dialog to begin Internet activation when you first launch the software.</dd>
+				<dt class="dialog">Settings</dt>
+				<dd class="box">Edit and customise elements of the programs functionality for your computer.</dd>
+				<dt class="dialog">SnipClip</dt>
+				<dd class="box">The window which contains the control panel and all available modules.</dd>
+			</dl>
+			<h2 id="menus" class="subheading">4.7. System menus</h2>
+			<ul class="sys" role="list">
+				<li class="menus">Main Program:</li>
+				<ul>
+					<li class="menu"><em>Enable SnipClip</em> - Enable or disable the Windows integration of the program.</li>
+					<li class="menu"><em>Show DropZone</em> - Show or hide the desktop widget to import code and files.</li>
+					<li class="menu"><em>Check For Updates</em> - Search the Internet for new releases for the software.</li>
+					<li class="menu"><em>ReadMe Document</em> - Launch the help file in your default Internet browser.</li>
+					<li class="menu"><em>Program Settings</em> - Open the settings dialog to edit advanced preferences.</li>
+					<li class="menu"><em>About SnipClip</em> - Get the version information about the installed product.</li>
+					<li class="menu"><em>Exit</em> - Close the program and disable its desktop integration until reloading.</li>
+				</ul>
+				<li class="menus">Control Panel:</li>
+				<ul>
+					<li class="menu"><em>Open Module</em> - Open the individual module from the control panel popup.</li>
+				</ul>
+				<li class="menus">Snippet Manager:</li>
+				<ul>
+					<li class="menu"><em>New Folder</em> - Create a new folder in this location to store code snippets.</li>
+					<li class="menu"><em>Rename Folder</em> - Rename an existing folder but keep snippets held inside.</li>
+					<li class="menu"><em>Delete Folder</em> - Delete a folder which exists and delete all of the snippets.</li>
+					<li class="menu"><em>New Snippet</em> - Create a new code snippet within an existing custom folder.</li>
+					<li class="menu"><em>Rename Snippet</em> - Rename an existing snippet without altering the content.</li>
+					<li class="menu"><em>Delete Snippet</em> - Delete a code snippet from a folder and erase its content.</li>
+					<li class="menu"><em>Import Snippet</em> - Import an existing file which should contain reusable code.</li>
+					<li class="menu"><em>Export Snippet</em> - Export an existing snippet of code to an external filename.</li>
+					<li class="menu"><em>Move Snippet</em> - Move a snippet of code from one folder to another location.</li>
+					<li class="menu"><em>Print Snippet</em> - Print and preview a copy of the code snippet to your printer.</li>
+					<li class="menu"><em>E-mail Snippet</em> - Send the snippet to one of your friends or colleagues.</li>
+					<li class="menu"><em>Source Code</em> - View or edit the source code for the selected code snippet.</li>
+				</ul>
+			</ul>
+			<hr>
+			<h2 id="advanced" class="subheading">5. Advanced</h2>
+			<p class="copy">Below extends the getting started guide by providing some advanced information in reference to getting the software up and running. You will find an advanced guide to each of the modules of the product which will detail the user interface as well as how to quickly accomplish tasks. Also you will find a detailed guide to all of the things you can configure using the program settings dialog.</p>
+			<h2 id="control" class="subheading">5.1. Control panel</h2>
+			<p class="copy">The control panel is the first thing you will see when launching the pop-up window for HiTechy SnipClip unless you have the option in the settings dialog set to remember the last used module you accessed. Inside the control panel you will find a series of icons which will each have a specific purpose or function for the program. Each of their functions will be explicitly explained both above (in the Program Features section) and below (advanced usage guide). To use a function of the program, simply click on its icon or right click and select its individual menu item and the pop-up window will automatically readjust its size to meet the requirements of the module. When a module is opened you can return to the control panel by selecting the icon in the top left hand corner of the title bar.</p>
+			<h2 id="snippet" class="subheading">5.2. Snippet manager</h2>
+			<p class="copy">When you load the Snippet manager, you will be presented with a dialog containing a dropdown menu with a list of programming languages. By changing the language, the list of folders and snippets will readjust for what exists under the container of that language. Below the dropdown will be a tree containing folders (which are containers for groups of snippets) and snippets which are stored under that folder (filtered by category) which can be right clicked. And below the list of folders and snippets is a checkbox which contains the option to show or hide publically accessible snippets (which can be edited by any user). This makes up the interface of the module.</p>
+			<p class="copy">You can navigate the snippet manager by filtering all of the available snippets by selecting the language and folder (category) the snippet has been stored under. This makes finding the snippet you wish to use much easier than if it was a universal list. The filter by language allows for around 35,000 snippets per individual syntax language. Folders exist to allow categorization of the snippets for each language. Also publically available snippets can be hidden if the snippet you wish to use is only available to you.</p>
+			<p class="copy pb">Right clicking on an item will bring up a series of editing commands such as adding, editing or deleting a new folder or snippet. Also commands such as moving a snippet between folders, editing source code, printing, previewing your work and e-mailing a snippet are available to help you work with your snippets more effectively. Keyboard shortcuts such as <kbd class="kbd">Del</kbd> can be used to remove a folder or snippet and <kbd class="kbd">F2</kbd> can rename a snippet or folder. To export one of the items so that it can be quickly inserted into another application, drag and drop the selected snippet by the filename. You can also drag and drop snippets from one folder to another to move the code.</p>
+			<h2 id="wizard" class="subheading">5.3. SnipClip wizard</h2>
+			<p class="copy">When you drag and drop code to the desktop widget the Wizard will load. This Screen will display two options to import or export the snippet. Export will show a dialog to save the snippet to a file. Import will show the edit source section of the wizard. This section allows you to edit the snippet, cut and paste code and even drag and drop (import) existing files and code into the window. Next you will be presented with a save snippet page. You can choose a filename, folder (create, edit, delete), public or private location and the language you wish it to be filed under. When you are done, press finish and the wizard will exit and your data will be saved.</p>
+			<p class="copy">In further reference to the above information for snippet creation or editing: If you are creating a new snippet of code from within the product, all of the above sections will apply to the wizard, with exception of the initial import / export page being shown. However if you are simply using View Source to edit your existing code, you will only see the edit source page of the wizard.</p>
+			<h2 id="settings" class="subheading">5.4. Program settings</h2>
+			<ul class="sys" role="list">
+				<li class="settings">General:</li>
+				<ul>
+					<li class="setting"><em>Language</em> - Change the language the text elements of the program will use.</li>
+					<li class="setting"><em>Theme</em> - Select a theme the program will use to style the look and feel.</li>
+					<li class="setting"><em>Startup</em> - Add a registry setting to control the program loading on startup.</li>
+					<li class="setting"><em>Integration</em> - Setup the programs integration and functionality in Windows.</li>
+					<li class="setting"><em>DropZone</em> - Show or hide the desktop widget to allow importing of snippets.</li>
+					<li class="setting"><em>Tray</em> - Remove or add the default system tray icon for the SnipClip popups.</li>
+					<li class="setting"><em>HotKey</em> - Configure the hotkeys to launch the control panel when required.</li>
+					<li class="setting"><em>Updates</em> - Determine if the program should check for updates automatically.</li>
+				</ul>
+				<li class="settings">Snippets:</li>
+				<ul>
+					<li class="setting"><em><abbr class="abbr" title="Simple mail transfer protocol">SMTP</abbr> Host</em> - Change your default <abbr class="abbr" title="Simple mail transfer protocol">SMTP</abbr> provider for sending out e-mails.</li>
+					<li class="setting"><em><abbr class="abbr" title="Simple mail transfer protocol">SMTP</abbr> Port</em> - Select the port your e-mail provider uses to send messages.</li>
+					<li class="setting"><em>Username</em> - Edit your details for the <abbr class="abbr" title="Simple mail transfer protocol">SMTP</abbr> service provided to by your host.</li>
+					<li class="setting"><em>Password</em> - Enter your password to authenticate with your service provider.</li>
+					<li class="setting"><em>Test Account</em> - Validate your details to conform the service is working.</li>
+				</ul>
+				<li class="settings">Advanced:</li>
+				<ul>
+					<li class="setting"><em>ToolTips</em> - Explain control panel functionality when you hover over icons.</li>
+					<li class="setting"><em>AlwaysOnTop</em> - Force the program to remain on top of other processes.</li>
+					<li class="setting"><em>RecentModule</em> - Remember the last accessed control panel module.</li>
+					<li class="setting"><em>LargeArea</em> - Show a larger DropZone area for high screen resolutions.</li>
+					<li class="setting"><em>Position</em> - Remember the widgets position each time the software loads.</li>
+					<li class="setting"><em>WigetOnTop</em> - Force the widget to remain on top of all other processes.</li>
+					<li class="setting"><em>DropCode</em> - Allow the dropping of source code or text onto the DropZone.</li>
+					<li class="setting"><em>DropFiles</em> - Allow the dropping of supported file formats onto the DropZone.</li>
+					<li class="setting"><em>Default</em> - Restore your default settings for the program quickly and easily.</li>
+				</ul>
+			</ul>
+			<hr>
+			<h2 id="developers" class="subheading">6. Developers</h2>
+			<p class="copy">Welcome to the developer's area, this section of the document contains everything you will need to edit the databases. HiTechy SnipClip uses an open <abbr class="abbr" title="Extensible Markup Language">XML</abbr> syntax format to store the core product content, which has been produced to make it quick and easy for other programs to use and edit the information. Remember that the program will not work, returning syntax errors or may even crash if the code is incorrectly formatted so make frequent backups of the databases if editing the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> source code.</p>
+			<h2 id="database" class="subheading">6.1 Database details</h2>
+			<ul>
+				<li class="db"><em>Filter.xml</em> - A list of custom filters to detect syntax languages and their formats.</li>
+				<li class="db"><em>Snippets.xml</em> - The primary database containing all user generated snippets.</li>
+			</ul>
+			<h2 id="character" class="subheading">6.2 Character guide</h2>
+			<table summary="Description">
+				<thead>
+					<tr>
+						<th class="tabular" rowspan="1" scope="col">Character</th>
+						<th class="tabular" colspan="2" scope="colgroup">Equivalent</th>
+					</tr>
+				</thead>
+				<colgroup><col span="2"></colgroup>
+				<tbody>
+					<tr>
+						<td class="tabular">&lt;-- </td>
+						<td class="tabular">Open comment (&lt;-- )</td>
+					</tr>
+					<tr>
+						<td class="tabular"> --&gt;</td>
+						<td class="tabular">Close comment ( --&gt;)</td>
+					</tr>
+					<tr>
+						<td class="tabular">&amplt;</td>
+						<td class="tabular">Open tag (&lt;)</td>
+					</tr>
+					<tr>
+						<td class="tabular">&ampgt;</td>
+						<td class="tabular">Close tag (&gt;)</td>
+					</tr>
+					<tr>
+						<td class="tabular">&ampamp;</td>
+						<td class="tabular">Ampersand (&amp;)</td>
+					</tr>
+					<tr>
+						<td class="tabular">&ampapos;</td>
+						<td class="tabular">Apostrophe (')</td>
+					</tr>
+					<tr>
+						<td class="tabular">&ampquot;</td>
+						<td class="tabular">Quotation mark (&quot;)</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="programming" class="subheading">6.3 Programming</h2>
+			<p class="copy">The first database you can edit is 'Filter.xml' which contains the filters that determine what kind of code you are importing and try to place it within the right category of snippets. The code validates as <abbr class="abbr" title="Extensible Markup Language">XML</abbr> version 1.0 specification but uses a specially designed layout to work for the program. If you are going to edit the file, please make a backup beforehand as syntax errors can cause the program to behave unexpectedly, return error messages or even crash if it is formatted incorrectly as the parser attempts to interpret the data.</p>
+			<p class="copy">Warning: Tag elements and attributes are case sensitve as listed below. Using invalid case sensitivity for tags and elements may result in issues in the programs rendering of your databases and may cause unseen errors within the software.</p>
+			<p class="copy">The first step of the process is the declaration that the document is <abbr class="abbr" title="Extensible Markup Language">XML</abbr>.</p>
+			<code class="syntax">&lt;?xml version=&quot;1.0&quot;?&gt;</code>
+			<p class="copy">Note: Declaring the document as valid <abbr class="abbr" title="Extensible Markup Language">XML</abbr> is always good practice but is not required by the parser.</p>
+			<p class="copy">The opening and closing tags for the document are shown as an Index.</p>
+			<code class="syntax">&lt;Index&gt;&lt;/Index&gt;</code>
+			<p class="copy">Note: These tags are not optional; they are required for the program to determine they are a database.</p>
+			<p class="copy">The below is an example of a language profile which requires attributes of <em>ID</em>, <em>Name</em> and <em>Extensions</em> as none of the three are optional components. The first attribute must match the language being used to declare the filters (In this case: HTML). The Name must be the second attribute and should contain the full name of the language being used (In this case: Hypertext Markup Language). And finally the extensions attribute should be placed which should contain the file extensions the language uses, separated by the | character (In this case: *.html|*.xhtml). The below example can be adapted for your needs to add further languages.</p>
+			<code class="syntax">&lt;Lang id=&quot;HTML&quot; name=&quot;Hypertext Markup Language&quot; extensions=&quot;*.html|*.xhtml&quot;&gt;&lt;/Lang&gt;</code>
+			<p class="copy">Warning: All three of the attributes contained in the above example (<em>ID</em>, <em>Name</em> and <em>Extensions</em>) are required for the program to use each code snippet, failure to include any element may result in critical errors in how the program functions.</p>
+			<p class="copy">The below is an example of a filter, you can have an unlimited amount of filters for each syntax language and the program will count the number of instances of the filter and assign it a value to the language to determine which language is the predominant environment. Each filter must have an opening and closing tag and must contain characters which comply with XML validation. The character guide noted above shows the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> equivalents of the ASCII characters to avoid syntax errors which you must abide by. If you add a snippet within the program, it will be automatically converted to and from the noted characters required.</p>
+			<code class="syntax">&lt;Filter&gt;&amplt;p&ampgt;&lt;/Filter&gt;</code>
+			<p class="copy">Note: You can use standard <abbr class="abbr" title="Extensible Markup Language">XML</abbr> characters without using the replacements. If you have a lot of code you don't want to translate you can simply enclose them in comment tags which are also listed within the above character guide.</p>
+			<p class="copy">The below self closing tag is required at the end of the file before the closing index tag. This simply exists so that if the snippet of code that has been imported cannot be detected by any of the existing filters it will automatically associate it as plain text.</p>
+			<code class="syntax">&lt;Lang id=&quot;Text&quot; name=&quot;Plain Text Format&quot; extensions=&quot;*.txt&quot; /&gt;</code>
+			<p class="copy">Warning: If required, you can edit any element of this 'failsafe' tag, for example to encompass additional file extensions. However this tag must not be removed otherwise undetermined code may not be accepted by the product.</p>
+			<p class="copy">The second database you can edit is 'Snippets.xml' which contains the complete list of code snippets you have imported or created from within the product. The code validates as <abbr class="abbr" title="Extensible Markup Language">XML</abbr> version 1.0 specification but uses a specially designed layout to work for the program. If you are going to edit the file, please make a backup beforehand as syntax errors can cause the program to behave unexpectedly, return error messages or even crash if it is formatted incorrectly as the parser attempts to interpret the data.</p>
+			<p class="copy">The first step of the process is the declaration that the document is <abbr class="abbr" title="Extensible Markup Language">XML</abbr>.</p>
+			<code class="syntax">&lt;?xml version=&quot;1.0&quot;?&gt;</code>
+			<p class="copy">Note: Declaring the document as valid <abbr class="abbr" title="Extensible Markup Language">XML</abbr> is always good practice but is not required by the parser.</p>
+			<p class="copy">The opening and closing tags for the document are shown as an Index.</p>
+			<code class="syntax">&lt;Index&gt;&lt;/Index&gt;</code>
+			<p class="copy">Note: These tags are not optional; they are required for the program to determine they are a database.</p>
+			<p class="copy">The next section of this process declares the users who have snippets located on your computer or network. The name attribute should have a value which matches the computer name, succeeded with the name of the user on that machine (In this case: PC\Admin). The purpose of this tag is to separate each users snippets so they remain relatively private to their individual users.</p>
+			<code class="syntax">&lt;User name=&quot;PC\Admin&quot;&gt;&lt;/User&gt;</code>
+			<p class="copy">Warning: A required user name of 'All Users' exists (And must not be removed) as a location for globally shared snippets. Any pieces of code placed there are available for use and can be edited by every user who has access to the program.</p>
+			<p class="copy">Next, you will find a tag for every single language contained in the 'Filter.xml' file. The below example has an ID value of HTML which of course represents Hypertext Markup Language. You can define lang tags for any language such as RSS, CSS and PHP, but the tags must exist in both 'Filter.xml' and 'Snippets.xml'. Also, if you make a change in the syntax language filter the product will automatically add the missing syntax language reference to every user as it is required. However it will not remove redundant values.</p>
+			<code class="syntax">&lt;Lang id=&quot;HTML&quot;&gt;&lt;/Lang&gt;</code>
+			<p class="copy">Warning: Not only must the tags synchronise with those in 'Filter.xml', the tag must exist for every single user listed in the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> database (Including the 'All Users' section) or syntax errors and crashes may occur when trying to access corrupted / missing sections.</p>
+			<p class="copy">The next section of the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> database contains the folders which exist for each syntax language. Folders must contain a name which represents the snippets held inside most appropriately. If a folder is empty it can have a self closing tag rather than a full closing tag.</p>
+			<code class="syntax">&lt;Folder name=&quot;My Snippets&quot;&gt;&lt;/Folder&gt;</code>
+			<p class="copy">Warning: Two folders come preinstalled with the program as template folders and should not be edited or removed. 'Public Snippet Library' and 'My Snippets' are required program folders and should not be removed or renamed in the database.</p>
+			<p class="copy">Finally, you will reach the section of the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> database for the code snippet. Each snippet alike to a folder must contain a name which represents the code held inside most appropriately. Each snippet must have an opening and closing tag and must contain characters which comply with <abbr class="abbr" title="Extensible Markup Language">XML</abbr> validation (See the character guide above for equivalent characters alike to adding filters into the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> database). If you add a snippet within the program, it will be automatically converted to and from the noted characters required.</p>
+			<code class="syntax">&lt;Snippet name=&quot;Demo&quot;&gt;&amplt;p&ampgt;Demo&amplt;/p&ampgt;&lt;/Snippet&gt;</code>
+			<p class="copy">Note: You can use standard <abbr class="abbr" title="Extensible Markup Language">XML</abbr> characters without using the replacements. If you have a lot of code you don't want to translate you can simply enclose them in comment tags which are also listed within the above character guide.</p>
+			<hr>
+			<h2 id="support" class="subheading">7. Support</h2>
+			<p class="copy">The below contains information you will require for getting technical support for your product beyond this help documentation. You will find a troubleshooting guide for common error messages, frequently asked questions; a list of what is new with this version of the product and a list of changes through the software's version history, Internet resources and details on how to contact us online.</p>
+			<h2 id="faq" class="subheading">7.1. FAQ listings</h2>
+			<dl>
+				<dt class="question">Is HiTechy SnipClip Free?</dt>
+				<dd class="answer">No, the product is a commercial product and is available to purchase from our website. Currently there is no free reduced functionality version of our product or a product trial (due to the type of program it is), however you can get free tours, screenshots and information for the product to check out its functionality from our website.</dd>
+				<dt class="question">Can I install the product on multiple computers?</dt>
+				<dd class="answer">If you have purchased a single user license you may install the product on a single machine for a single user. If you have purchased a multi user license you may install the product on multiple machines. However these machines must be owned by the person or group who purchased the license and only available to the amount of users your license permits.</dd>
+				<dt class="question">What upgrades am I entitled too?</dt>
+				<dd class="answer">All registered users are entitled to receive all same version upgrades, such as from version 1.0 to 1.5. But you are not entitled to receive upgrades from version 1.0 to 2.0 but you may be entitled to a discounted upgrade price.</dd>
+				<dt class="question">Is there a trial version available?</dt>
+				<dd class="answer">Yes, there is a demonstration model available from within the programs activation menu. By providing this option you can try the product before you decide to pay for the software and as a demo it has no time limit for usage.</dd>
+			</dl>
+			<h2 id="new" class="subheading">7.2. What's new?</h2>
+			<p class="copy">Version: 1.35</p>
+			<ul class="sys" role="list">
+				<li class="updates">Updates:</li>
+				<ul>
+					<li class="update">Update to allow demo users to print and email source code.</li>
+					<li class="update">Update making the program have a smaller memory footprint.</li>
+					<li class="update">Update for the documentation to make it more printer friendly.</li>
+					<li class="update">Update to enable support for <abbr class="abbr" title="Service Pack 1">SP1</abbr> of the .NET 3.5 framework.</li>
+					<li class="update">Update includes more recent information in the documentation.</li>
+				</ul>
+				<li class="fixes">Fixes:</li>
+				<ul>
+					<li class="fix">Fixed the installer to check for the correct .NET framework.</li>
+					<li class="fix">Fixed a crash resulting from actively selecting a null value.</li>
+					<li class="fix">Fixed issue with activation values if license key is missing.</li>
+					<li class="fix">Fixed an issue with remset option not being enabled correctly.</li>
+					<li class="fix">Fixed issue caused when multiple <abbr class="abbr" title="Extensible Markup Language">XML</abbr> databases missing.</li>
+				</ul>
+			</ul>
+			<h2 id="history" class="subheading">7.3. Version history</h2>
+			<p class="copy">Version: 1.3</p>
+			<ul class="sys" role="list">
+				<li class="updates">Updates:</li>
+				<ul>
+					<li class="update">Update to automatically rebuild databases if they go missing.</li>
+					<li class="update">Update to be able to cancel printing and previewing snippets.</li>
+					<li class="update">Update includes keyboard shortcut additions for 4 new keys.</li>
+					<li class="update">Update so that pages used by settings will be remembered.</li>
+					<li class="update">Update so that double clicking about icon loads system info.</li>
+					<li class="update">Update optimised the code to further reduce memory usage.</li>
+					<li class="update">Update includes more recent information in the documentation.</li>
+				</ul>
+				<li class="fixes">Fixes:</li>
+				<ul>
+					<li class="fix">Fixed crash occurring when using the 'Pin On Top' function.</li>
+					<li class="fix">Fixed the issue occuring from sending several e-mails.</li>
+					<li class="fix">Fixed the crash occuring with corruted registry information.</li>
+					<li class="fix">Fixed annoying bug causing the current panel mode to reset.</li>
+					<li class="fix">Fixed an issue resulting from empty <abbr class="abbr" title="Simple mail transfer protocol">SMTP</abbr> e-mail settings.</li>
+					<li class="fix">Fixed import folder listing when you select a specific category.</li>
+					<li class="fix">Fixed the single item expanding and contracting auto issue.</li>
+					<li class="fix">Fixed the incorrect port listings by default for <abbr class="abbr" title="Simple mail transfer protocol">SMTP</abbr> protocol.</li>
+					<li class="fix">Fixed a display glitch for the shared snippets on Windows XP.</li>
+					<li class="fix">Fixed flickering issue being caused by loading context menus.</li>
+					<li class="fix">Fixed minor glitch with enabling the apply button for options.</li>
+					<li class="fix">Fixed some additional minor issues from spelling mistakes.</li>
+					<li class="fix">Fixed error with the version information in the assembly file.</li>
+				</ul>
+			</ul>
+			<p class="copy">Version: 1.2</p>
+			<ul class="sys" role="list">
+				<li class="added">Added:</li>
+				<ul>
+					<li class="add">Added a brand new integrated e-mail facility for snippets.</li>
+					<li class="add">Print preview functionality is added into the product.</li>
+				</ul>
+				<li class="updates">Updates:</li>
+				<ul>
+					<li class="update">Update for the syntax debugger to check for requirements.</li>
+					<li class="update">Update includes more recent information in the documentation.</li>
+					<li class="update">Update optimised the code to further reduce memory usage.</li>
+					<li class="update">Update for missing documentation to show live information.</li>
+					<li class="update">Update includes keyboard shortcut additions for 4 new keys.</li>
+					<li class="update">Update to give the updated website information for SnipClip.</li>
+				</ul>
+				<li class="fixes">Fixes:</li>
+				<ul>
+					<li class="fix">Fixed an issue causing a crash when trying to edit nothing.</li>
+					<li class="fix">Fixed critical flaw when renaming identically named files.</li>
+					<li class="fix">Fixed an issue resulting from the order of language filters.</li>
+					<li class="fix">Fixed bug from incorrect language detection through import.</li>
+					<li class="fix">Fixed returning to control panel without settings issue.</li>
+					<li class="fix">Fixed the context menu loading in an empty region issue.</li>
+					<li class="fix">Fixed the DropZone size based on resolution generic problem.</li>
+					<li class="fix">Fixed an issue caused by using the Windows Classic theme.</li>
+					<li class="fix">Fixed a bug resulting from invalid filenames while printing.</li>
+					<li class="fix">Fixed the apply settings while reshowing dialog boxes bug.</li>
+					<li class="fix">Fixed an issue issue resulting from loading the databases.</li>
+					<li class="fix">Fixed minor glitch with the settings reset functionality.</li>
+				</ul>
+			</ul>
+			<p class="copy">Version: 1.1</p>
+			<ul class="sys" role="list">
+				<li class="added">Added:</li>
+				<ul>
+					<li class="add">Added demonstration mode for trial users of the product.</li>
+					<li class="add">Added ability to move snippets of code using drag and drop.</li>
+					<li class="add">Added the ability to remember the last module accessed.</li>
+				</ul>
+				<li class="updates">Updates:</li>
+				<ul>
+					<li class="update">Update for the help documentation includes new functionality.</li>
+					<li class="update">Update to enable applying settings without closing dialogs.</li>
+					<li class="update">Update to allow opening of control panel items from menus.</li>
+					<li class="update">Update in the titlebar showing a show control panel icon.</li>
+					<li class="update">Update for the titlebar with an icon to focus the DropZone.</li>
+					<li class="update">Update included to make the program use less system memory.</li>
+				</ul>
+				<li class="fixes">Fixes:</li>
+				<ul>
+					<li class="fix">Fixed context bug which caused crashing of the program.</li>
+					<li class="fix">Fixed critical flaw during the drag and drop selection.</li>
+					<li class="fix">Fixed a major issue with deleting snippets individually.</li>
+					<li class="fix">Fixed issue occuring while right clicking within manager.</li>
+					<li class="fix">Fixed a bug causing the program to crash on closing down.</li>
+					<li class="fix">Fixed hotkey based delete and rename in the import wizard.</li>
+					<li class="fix">Fixed a flaw with repeat renaming of snippets and folders.</li>
+					<li class="fix">Fixed an issue with double selection of keyboard shotcuts.</li>
+					<li class="fix">Fixed setup file issue with relative filename changes.</li>
+					<li class="fix">Fixed spelling error in section 3.1 of the documentation.</li>
+					<li class="fix">Fixed a spelling issue with the remove snippet dialog.</li>
+				</ul>
+			</ul>
+			<p class="copy">Version: 1.0</p>
+			<ul>
+				<li class="add">Initial release version, no previous updates are available.</li>
+			</ul>
+			<h2 id="troubleshooter" class="subheading">7.4. Troubleshooter</h2>
+			<p class="copy">Below is a list of error messages you may receive while using the program and how they can be resolved. This includes issues with running the program, using product activation to register your copy and checking for online updates.</p>
+			<dl>
+				<dt class="issue">The Microsoft .NET Framework 3.5 is missing.</dt>
+				<dd class="solve">This problem will occur only during the setup process if you do not have the required version of the .NET framework by Microsoft. You will be required to visit the Microsoft website and download the latest required version for the program to install successfully.</dd>
+				<dt class="issue">The document 'Readme.html' could not be found.</dt>
+				<dd class="solve">The help files are either missing or not installed. You can launch a copy of our online manual which is updated automatically in preference, However to bring back the offline version, run setup again and make sure to select the ReadMe Document within support files to install them again when reaching the component category.</dd>
+				<dt class="issue">The code you attempted to import could not be identified.</dt>
+				<dd class="solve">To overcome this error either get an up-to-date 'Filter.xml' file (if one exists) or simply allow the program to import the code as plain text. When you reach the stage to choose where to save the code, select what language you would like to code to be filed under if you can identify the type of code, otherwise you can just save it as a plain text snippet.</dd>
+				<dt class="issue">A critical error occurred while trying to load HiTechy SnipClip.</dt>
+				<dd class="solve">The program has suffered a major error which could not be resolved, try reinstalling the product. If you still receive errors after reinstalling, contact technical support with further details to receive help resolving the problem.</dd>
+				<dt class="issue">A critical error occured while trying to load the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> databases.</dt>
+				<dd class="solve">Both of the <abbr class="abbr" title="Extensible Markup Language">XML</abbr> databases the program requires are missing, as a result the program will attempt to rebuild the required files, if this is not successful you will be required to reinstall the program or manually restore the databases.</dd>
+				<dt class="issue">A critical error occured while trying to load 'xxx.xml'.</dt>
+				<dd class="solve">The <abbr class="abbr" title="Extensible Markup Language">XML</abbr> file could either not be found or contains invalid syntax. The program will automatically attempt to rebuild the databases based upon its default 'Safe Mode' which will not include any language categories. To restore any custom language based filters you will need to reinstall the application or replace the existing 'Filter.xml' file with the customised version.</dd>
+				<dt class="issue">The 'All Users' shared username within 'Snippets.xml' is missing.</dt>
+				<dd class="solve">This is caused when the global user 'All Users' has been deleted or edited from within the syntax file. To fix this error you will need to either reinstall the program or to restore the 'All Users' listing back into the database properly.</dd>
+				<dt class="issue">One of the default shared folders in 'Snippets.xml' is missing.</dt>
+				<dd class="solve">This is caused when one of the default shared folders 'My Snippets' or 'Public Snippets' has been deleted. To fix this error you will need to either remove and reinstall the program or to restore the folders as required back into their appropriate usernames.</dd>
+				<dt class="issue">The Plain Text Format support within the program is missing.</dt>
+				<dd class="solve">This is caused when the default format for non identifiable text has been removed. This is a required element of the program and to fix this issue you must reinstall restore the setting back into the 'Filter.xml' location.</dd>
+				<dt class="issue">Some of the language attributes within 'Filter.xml' are missing.</dt>
+				<dd class="solve">This is caused when one of the three required language attributes is missing from one of the independant sections. To resolve this issue restore the ID, Names or Extensions attribute that is missing or reinstall the program.</dd>
+				<dt class="issue">The ID attribute within 'Snippets.xml' for a specific Language is missing.</dt>
+				<dd class="solve">This is caused when the ID attribute for one of the languages listed in 'Snippets.xml' is missing from the database. To fix this error you will need to either reinstall the program or restore the setting back into the database.</dd>
+				<dt class="issue">The Name attribute in 'Snippets.xml' for a specific 'X' is missing.</dt>
+				<dd class="solve">This is caused when one of the name attributes is missing from a User, Folder or Snippet section of the database. To fix this error you can either reinstall the program or restore the missing attribute to where it is required.</dd>
+				<dt class="issue">The folder / snippet name you have suggested is already in use.</dt>
+				<dd class="solve">Please rename the folder / snippet using another name which does not exist under this particular language container.</dd>
+				<dt class="issue">Please enter the code you wish to save as a Snippet.</dt>
+				<dd class="solve">You need to enter some code that you wish to use for the snippet to be associated with in the future.</dd>
+				<dt class="issue">Please select a file name for your code Snippet.</dt>
+				<dd class="solve">You are required to give the snippet a name for future references of the product; it's useful to give it a meaningful name.</dd>
+				<dt class="issue">A new folder already exists, Please give it a name.</dt>
+				<dd class="solve">You cannot create two new folders with the same name, please give the first new folder a name before you create a new one.</dd>
+				<dt class="issue">The file could not be successfully saved, Try again later.</dt>
+				<dd class="solve">An error occurred while trying to save your snippet to an external file, check your file is not in use.</dd>
+				<dt class="issue">The code Snippet could not be successfully moved.</dt>
+				<dd class="solve">The folder contained a file with the same name, please either change the name of the file you want to be moved into the new folder or change the name of the file in the folder that is causing the conflict.</dd>
+				<dt class="issue">This folder cannot be deleted as it is required by the system.</dt>
+				<dd class="solve">You cannot delete this folder as it is a protected system folder, don't try as it's required by the product.</dd>
+				<dt class="issue">No printers are installed.</dt>
+				<dd class="solve">This error will occur if you do not have a printer installed for the print preview function to work with, if you do have a printer installed and still receive this error please try making sure the printer is turned on or that the printer is set as the default device.</dd>
+				<dt class="issue">You are required to setup your default email settings to continue.</dt>
+				<dd class="solve">This message appears when you have not set up the default contact e-mail settings within the options dialog. To send code as emails to users you simply need to setup your <abbr class="abbr" title="Simple mail transfer protocol">SMTP</abbr> details which should be made available by either your <abbr class="abbr" title="Internet service provider">ISP</abbr>, your e-mail / web host or maintained by yourself. Note: The code manager is intended only for sharing code, though we do not monitor or users usage of the software, any consistent reports of abusing the functionality may result in account suspension.</dd>
+				<dt class="issue">Some of the required SMTP e-mail settings are missing.</dt>
+				<dd class="solve">This message appears when you have not filled in all of the required settings for the e-mail client. The four required fields are Host, Port, Username and Password. All of these details for sending e-mail should be available from your Internet provider.</dd>
+				<dt class="issue">The e-mail could not be successfully sent due to a connection problem.</dt>
+				<dd class="solve">While trying to send an e-mail or test the Internet connection, authentication failed. This means that your <abbr class="abbr" title="Simple mail transfer protocol">SMTP</abbr> details in the settings dialog are possibly incorrect. If your details are correct it could mean the server is down, or possibly your firewall, <abbr class="abbr" title="Internet service provider">ISP</abbr> or router may be blocking the traffic to attempt to prevemt spammers from taking advantage of the software.</dd>
+				<dt class="issue">The Beta testing period for HiTechy SnipClip has expired.</dt>
+				<dd class="solve">You are currently licensed as a beta tester for the product; however the beta testing period has expired and is no longer being carried out. Please purchase a proper license and enter the new information to use the product.</dd>
+				<dt class="issue">Sorry, The license key you have provided for SnipClip is invalid.</dt>
+				<dd class="solve">Your license key does not exist, please check it has been spelled correctly and try again. If you are sure that the information is correct and you have purchased a legitimate license, contact technical support for assistance.</dd>
+				<dt class="issue">Sorry, the e-mail address does not match the one on record.</dt>
+				<dd class="solve">The e-mail address you have provided does not match the licensed user associated with that license key, please check it has been spelled correctly and try again. If you are sure the information is correct, contact support.</dd>
+				<dt class="issue">Sorry, the key you provided wasn't intended for this product version.</dt>
+				<dd class="solve">You are using a license key for a previous version of the product, such as trying to use a license for version 1.0 in version 2.0 of the software. To continue using this program you will need to purchase a new license or you can download the last version you are entitled to use and stay using the older version until you wish to purchase an upgrade to the newest version.</dd>
+			</dl>
+			<h2 id="contact" class="subheading">7.5. Contact us</h2>
+			<p class="copy">If you need to contact our technical support team because you have found a bug or issue, or are having problems using the product, please visit our website as we have a series of documents and contact forms for you to use. The first port of call for your problems should always be this help file and our online documents as these will answer many general enquiries. From there if your issue is still unresolved or if you need to get in contact with HiTechy itself in regards to billing, business or press information, use our contact forms.</p>
+			<hr>
+			<h2 id="index" class="subheading">8. Index</h2>
+			<p class="copy">The below index contains general information which you may find useful or interesting. There is a list of terminology used within SnipClip to help you understand what definitions certain words refer too. Also there is a list of acknowledgements and credits for individuals and groups who contributed to the product through either licensed / paid for services or free voluntary assistance.</p>
+			<h2 id="glossary" class="subheading">8.1. Glossary of terms</h2>
+			<dl class="pb">
+				<dt class="term">Activation</dt>
+				<dd class="defined">The method of registering the program as a paid for piece of software.</dd>
+				<dt class="term">Database</dt>
+				<dd class="defined">A storage container which holds all of the information saved within SnipClip.</dd>
+				<dt class="term">Demo</dt>
+				<dd class="defined">A trial for the program which allows a free method of testing the software.</dd>
+				<dt class="term">DropZone</dt>
+				<dd class="defined">Part of a program allowing files or data to be dragged and dropped onto it.</dd>
+				<dt class="term">HiTechy</dt>
+				<dd class="defined">The business which produced and sells SnipClip software online.</dd>
+				<dt class="term">Hotkey</dt>
+				<dd class="defined">A selection of keys which if pressed together causes the software to activate.</dd>
+				<dt class="term">HTML</dt>
+				<dd class="defined">A markup language used for developing websites for the Internet.</dd>
+				<dt class="term">Plain Text</dt>
+				<dd class="defined">Generic code which is unformatted or of an unknown syntax language.</dd>
+				<dt class="term">SnipClip</dt>
+				<dd class="defined">A universal source code snippet manager for Microsoft Windows.</dd>
+				<dt class="term">Snippet</dt>
+				<dd class="defined">A piece of source code which can be reused, managed or shared.</dd>
+				<dt class="term">Vista</dt>
+				<dd class="defined">A version of Microsoft Windows which the program can run on.</dd>
+				<dt class="term">W3C</dt>
+				<dd class="defined">The world wide web consortium, a group who standardise the Internet.</dd>
+				<dt class="term">Windows</dt>
+				<dd class="defined">The operating system developed by Microsoft which the product runs using.</dd>
+				<dt class="term">Widget</dt>
+				<dd class="defined">Part of the program which floats on the desktop providing functionality.</dd>
+				<dt class="term">XML</dt>
+				<dd class="defined">The extensible markup language used to hold snippets and language data.</dd>
+			</dl>
+			<h2 id="acknowledgements" class="subheading">8.2. Acknowledgements</h2>
+			<ul>
+				<li class="thanks">Integrated Components:</li>
+				<ul>
+					<li class="credit">AD2K-Ware (Code Libraries)</li>
+					<li class="credit">FamFamFam by Mark James (Silk Icon Set)</li>
+					<li class="credit">IconFish.com (Quadrata Icon Pack)</li>
+					<li class="credit">MadeBits (.NETZ Code Compression)</li>
+					<li class="credit">Monki.es (Orange Vista Modern UI Theme)</li>
+				</ul>
+				<li class="thanks">Website Design:</li>
+				<ul>
+					<li class="credit">Daily.co.uk (Domain Registrar)</li>
+					<li class="credit">MediaTemple (Website Hosting)</li>
+				</ul>
+				<li class="thanks">Products Used:</li>
+				<ul>
+					<li class="credit">ColorSchemer (Color Schemer Studio)</li>
+					<li class="credit">Eclipsit, Inc (Microangelo Studio)</li>
+					<li class="credit">Hector Mauricio Rodriguez Segura (HM NIS Editor)</li>
+					<li class="credit">Jasc Software, Inc (PaintShop Pro 7)</li>
+					<li class="credit">M. Dev Software (ZipGenius)</li>
+					<li class="credit">Microsoft (Office 2007 Ultimate)</li>
+					<li class="credit">Microsoft (Visual Basic .NET 2008 Express)</li>
+					<li class="credit">NSIS (NullSoft Install System)</li>
+				</ul>
+				<li class="thanks">Internet Tools:</li>
+				<ul>
+					<li class="credit">Apple, Inc (Safari Browser)</li>
+					<li class="credit">Don HO (Notepad ++ Syntax Editor)</li>
+					<li class="credit">Lynx-Dev Group (Lynx Browser)</li>
+					<li class="credit">Microsoft (Internet Explorer Browser)</li>
+					<li class="credit">Mozilla (Firefox Browser)</li>
+					<li class="credit">OpenWave Systems (OpenWave WAP Browser)</li>
+					<li class="credit">Opera (Opera Browser)</li>
+					<li class="credit">SmartSoft LTD (SmartFTP)</li>
+					<li class="credit">SWiSHZone (SWiSHMax2)</li>
+				</ul>
+			</ul>
+			<h2 id="credits" class="subheading">8.3. Program credits</h2>
+			<ul>
+				<li class="credit">Alexander Dawson (Creator)</li>
+			</ul>
+			<hr>
+		</main>
+		<footer class="footer">
+			<p class="copyright">Copyright, <span>2008</span></p>
+			<p class="build">Built by <a href="https://alexanderdawson.com">Alex Dawson</a>.</p>
+		</footer>
+		<script>
+		"use strict";
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js');
+		}
+		</script>
+	</body>
+</html>

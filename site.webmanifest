@@ -1,0 +1,20 @@
+{
+	"short_name": "SnipClip",
+	"name": "HiTechy SnipClip",
+	"description": "SnipClip is a code snippet manager for Windows that sits in the system tray, uses little memory and doesn't mess with the clipboard.",
+	"icons": [
+		{
+			"src": "images/droidx192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "images/droidx512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff",
+	"display": "standalone"
+}

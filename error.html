@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Error - HiTechy SnipClip</title>
+		<meta name="description" content="SnipClip is a code snippet manager for Windows that sits in the system tray, uses little memory and doesn't mess with the clipboard.">
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="cache/fonts/Martel-Regular.woff2">
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="cache/fonts/Martel-Bold.woff2">
+		<link rel="stylesheet" href="cache/style.css">
+		<link rel="author" type="text/plain" href="humans.txt">
+		<meta name="referrer" content="no-referrer">
+		<meta name="apple-mobile-web-app-title" content="HiTechy SnipClip">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/svg+xml" href="images/icon.svg">
+		<link rel="manifest" href="site.webmanifest">
+		<meta name="msapplication-config" content="browserconfig.xml">
+		<meta name="theme-color" content="#f4f2d4">
+		<meta name="msapplication-config" content="browserconfig.xml">
+		<meta property="og:title" content="HiTechy SnipClip">
+		<meta property="og:description" content="SnipClip is a code snippet manager for Windows that sits in the system tray, uses little memory and doesn't mess with the clipboard.">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="en_us">
+		<meta property="og:url" content="https://snipclipapp.com/">
+		<meta property="og:image" content="images/banner.png">
+		<meta property="og:image:alt" content="Logo">
+		<script async src="cache/script.js"></script>
+	</head>
+	<body class="body">
+		<header class="header">
+			<a class="logo" href="index.html"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path fill="#455a64" d="M15 7h1v1h-1zM13 7h1v1h-1zM11 7h1v1h-1zM9 7h1v1H9z"/><path d="M12.45 10.1l-8-4.05A2.48 2.48 0 005 4.5a2.5 2.5 0 10-3.63 2.23l10.18 5.16A.98.98 0 0012 12a1 1 0 00.45-1.9z" fill="#d32f2f"/><path d="M2.5 3.5a1 1 0 011 1 1.04 1.04 0 01-1.45.9 1 1 0 01.45-1.9z" fill="#fafafa"/><path d="M12.9 3.55a1 1 0 00-1.35-.44L1.37 8.27A2.5 2.5 0 105 10.5a2.48 2.48 0 00-.55-1.55l8-4.06a1 1 0 00.44-1.34z" fill="#f44336"/><path d="M2.5 11.5a1 1 0 111-1 1 1 0 01-1 1z" fill="#fafafa"/></svg></a>
+			<h1 class="heading">HiTechy SnipClip</h1>
+			<p class="subtitle">The Code Snippet Manager</p>
+			<nav class="nav">
+				<ul>
+					<li class="item"><a href="guide.html">Guide</a></li>
+					<li class="item"><a href="cache/files/demo.exe">Demo</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article class="hide t_show" id="403">
+				<h2 class="error-head">403</h2>
+				<h3 class="error-sub">Access Forbidden</h3>
+				<p class="error-txt">Sorry, you'll need to login to visit this area.</p>
+			</article>
+			<article class="hide t_show" id="404">
+				<h2 class="error-head">404</h2>
+				<h3 class="error-sub">Resource Not Found</h3>
+				<p class="error-txt">You made a wrong turn. Lets try a different link.</p>
+			</article>
+			<article class="hide t_show" id="500">
+				<h2 class="error-head">500</h2>
+				<h3 class="error-sub">Internal Server Error</h3>
+				<p class="error-txt">We broke something. Sorry! Refresh, or try again later.</p>
+			</article>
+			<article class="hide t_show" id="503">
+				<h2 class="error-head">503</h2>
+				<h3 class="error-sub">Service Unavailable</h3>
+				<p class="error-txt">We're performing maintenance. Sorry! Come back soon.</p>
+			</article>
+		</main>
+		<footer class="footer">
+			<p class="copyright">Copyright, <span>2008</span></p>
+			<p class="build">Built by <a href="https://alexanderdawson.com">Alex Dawson</a>.</p>
+		</footer>
+		<script>
+		"use strict";
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js');
+		}
+		</script>
+	</body>
+</html>

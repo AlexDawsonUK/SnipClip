@@ -1,0 +1,340 @@
+@font-face {
+	font-family:'Martel';
+	src:local('Martel Regular'),
+		url('fonts/Martel-Regular.woff2') format('woff2'),
+		url('fonts/Martel-Regular.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family:'Martel';
+	src:local('Martel Bold'),
+		url('fonts/Martel-Bold.woff2') format('woff2'),
+		url('fonts/Martel-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: bold;
+}
+@media screen {
+	::selection { background-color: #333333; color: #f2f2f2; }
+	.hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+	.t_show:target { height: auto; left: auto; overflow: auto; position: static; top: auto; width: auto; }
+	.header, .left, .right {
+		align-items: center; }
+	.body {
+		background-color: #f2f2f2;
+		margin: 0 auto;
+		max-width: 54em; }
+	.kbd, .item a {
+		border-style: solid; }
+	.item a:hover {
+		border-color: #1e46ee; }
+	.item a {
+		border-color: #333333;
+		border-width: 0.2em;
+		display: block;
+		padding: 0.5em 1.5em; }
+	.nav a {
+		border-radius: 0.5em; }
+	.kbd {
+		border-width: 1px 2px 2px 1px;
+		padding: 0px 1px 0px 1px; }
+	.build a, .copy a, .nav a:hover, .toc a {
+		color: #1e46ee; }
+	.body, .nav a {
+		color: #333333; }
+	.title:before {
+		content: "-"; }
+	.copyright:before {
+		content: "\00a9";
+		position: relative;
+		top: 0.15em; }
+	.left, .right {
+		content-visibility: auto; }
+	.abbr {
+		cursor: help;
+		text-decoration: underline; }
+	.copyright:before, .copyright span {
+		cursor: text; }
+	.build, .copyright, .features, .footer, .left, .left .copy, .nav, .nav ul, .right, .right .copy {
+		display: flex; }
+	.header {
+		display: grid;
+		grid-template-areas: "logo heading nav" "logo subtitle nav";
+		grid-template-columns: calc(100px + 2em) auto 1fr;
+		grid-template-rows: 1fr 1fr; }
+	.features .feature {
+		flex-basis: calc(33% - 2em);
+		margin-left: 2em; }
+	.build, .copyright {
+		flex-basis: 50%; }
+	.left {
+		flex-direction: row-reverse; }
+	.features {
+		flex-wrap: wrap; }
+	.add, .added, .answer, .box, .build, .copy, .copyright, .core, .credit, .db, .defined, .dialog, .error-head, .error-sub, .error-txt, .feature, .features, .fix, .fixes, .format, .heading, .issue, .menu, .menus, .nav, .panel, .question, .setting, .settings, .solve, .subheading, .subtitle, .sysreq, .tabular, .term, .thanks, .toc, .update, .updates, .website {
+		font-family: 'Martel', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+	.kbd, .syntax {
+		font-family: Consolas, 'Courier New', Courier, monospace; }
+	.error-sub {
+		font-size: 1.5em; }
+	.title {
+		font-size: 2em;
+		padding-bottom: 1.6em; }
+	.error-head {
+		font-size: 4em;
+		margin-bottom: 0; }
+	.abbr, .added, .core, .dialog, .lists .features, .fixes, .issue, .menus, .question, .settings, .term, .thanks, .updates {
+		font-weight: bold; }
+	.heading {
+		grid-area: heading; }
+	.logo {
+		grid-area: logo; }
+	.nav {
+		grid-area: nav; }
+	.subtitle {
+		grid-area: subtitle; }
+	.logo img {
+		height: 100px;
+		width: 100px; }
+	.activate {
+		height: 165px; }
+	.dropzone {
+		height: 165px; }
+	.folderwiz, .snippetwiz {
+		height: 175px; }
+	.advanced, .email, .general {
+		height: 200px; }
+	.systray {
+		height: 200px; }
+	.about {
+		height: 269px; }
+	.folder {
+		height: 348px; }
+	.snippet {
+		height: 350px; }
+	.build, .nav {
+		justify-content: flex-end; }
+	.header .title {
+		justify-content: flex-start; }
+	.nav ul {
+		justify-content: space-between; }
+	.nav ul, .sys {
+		list-style-type: none; }
+	.features, .heading, .subtitle, .title {
+		margin: 0; }
+	hr, .features .feature, .footer {
+		margin-bottom: 2em; }
+	.t_show {
+		margin-bottom: 5em; }
+	hr, .header {
+		margin-top: 2em; }
+	.logo {
+		margin-right: 2em; }
+	.features, .lists, .nav ul, .sys {
+		padding-left: 0; }
+	.build a, .copyright span, .title:before {
+		padding-left: 0.2em; }
+	.left .copy {
+		padding-left : 2em; }
+	.copyright:before, .title:before {
+		padding-right: 0.2em; }
+	.right .copy {
+		padding-right : 2em; }
+	.error-head, .error-sub, .error-txt {
+		text-align: center; }
+	.tabular {
+		text-align: left;
+		width: 12em; }
+	.nav a {
+		text-decoration: none; }
+	.nav ul {
+		width: 50%; }
+}
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+	/* Fixes IE10+ Glitches */
+	.heading, .nav, .subtitle {
+		display: block; }
+	.nav {
+		float: right;
+		margin-top: -5em; }
+	.item a {
+		margin-left: 1em; }
+	.heading{
+		margin-left: 3.5em;
+		margin-top: -3em; }
+	.subtitle {
+		margin-left: 7em; }
+	.heading, .subtitle {
+		width: 50%; }
+}
+@media screen and (max-width: 900px) {
+	.footer, .main {
+		margin: 0 2em; }
+	.header {
+		margin: 2em auto;
+		width: 45em; }
+	.footer {
+		padding-bottom: 2em; }
+	.nav ul {
+		width: 75%; }
+}
+@media screen and (max-width: 780px) {
+	.title:before {
+		content: ""; }
+	.header {
+		grid-template-areas: "logo heading" "logo subtitle" "nav nav";
+		grid-template-columns: calc(100px + 2em) auto;
+		grid-template-rows: 1fr 1fr 1fr;
+		width: 100%; }
+	.nav {
+		justify-content: center; }
+	.logo {
+		left: 50%;
+		height: 8em;
+		width: 8em;
+		margin-left: -15em;
+		position: absolute;
+		top: 1em; }
+	.nav ul {
+		margin: 0; }
+	.guide {
+		margin-bottom: -4em; }
+	.title {
+		margin-left: -3.3em;
+		margin-top: -3em }
+	.heading {
+		margin-left: -5em; }
+	.subtitle {
+		margin-left: -10em; }
+	.guide .subtitle {
+		margin-top: 2em; }
+	.heading, .subtitle, .title {
+		padding-left: 50%; }
+	.guide .logo {
+		top: 2.5em; }
+}
+@media screen and (max-width: 780px) {
+	.features .feature {
+		flex-basis: calc(50% - 2em); }
+	.left, .right {
+		flex-direction: column; }
+	.left .copy, .right .copy {
+		margin-top: 0;
+		padding-left: 0;
+		padding-right: 0; }
+	.advanced, .email, .folderwiz, .general, .snippetwiz {
+		margin: 1em 0;
+		height: auto;
+		width: auto; }
+}
+@media screen and (max-width: 650px) {
+	.features .feature {
+		flex-basis: 100%;
+		margin-bottom: 1em; }
+	.advanced, .email, .folderwiz, .general, .snippetwiz {
+		width: 90%; }
+}
+@media screen and (max-width: 450px) {
+	.footer {
+		flex-direction: column-reverse; }
+	.build, .copyright {
+		justify-content: center; }
+	.left img, .right img {
+		height: auto;
+		width: 90%; }
+}
+@media screen and (max-width: 430px) {
+	.logo {
+		display: none; }
+	.heading {
+		margin-left: -6.5em; }
+	.subtitle {
+		margin-left: -11em; }
+}
+@media (prefers-color-scheme: dark) {
+	.body {
+		background-color: #121212; }
+	hr {
+		border: 1px solid #383838; }
+	.add, .added, .answer, .box, .build, .build a, .copy, .copy a, .core, .copyright, .credit, .db, .defined, .dialog, .feature, .features, .fix, .fixes, .format, .heading, .issue, .item a, .item a:hover, .menu, .menus, .nav, ol, .panel, .question, .setting, .settings, .solve, .subheading, .subtitle, .sysreq, .t_show, .tabular, .term, .thanks, .toc a, .update, .updates {
+		color: #dfdfdf; }
+	.syntax {
+		color: #575757;
+	}
+	.item a {
+    	border-color: #575757; }
+	.item a:hover {
+		border-color: #dfdfdf; }
+}
+@media (prefers-reduced-motion: reduce), (update: slow) {
+	*:not(.safe-animation),
+	*:not(.safe-animation)::before,
+	*:not(.safe-animation)::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-delay: -1ms !important;
+		transition-duration: 1ms !important;
+	}
+}
+@media print {
+	.main section .features, .header, .left, .right {
+		border-bottom-color: #000000;
+		border-bottom-style: solid;
+		border-bottom-width: 0.1em;
+		margin-bottom: 1em;
+		padding-bottom: 1em; }
+	.build a, .copy a, .toc a {
+		color: #000000;
+		text-decoration: none; }
+	.abbr::after {
+		content: " [" attr(title) "]";
+		display: inline-block;
+		font-weight: normal; }
+	.copyright:before {
+		content: "\00a9";
+		padding-right: 0.2em; }
+	.build a::after, .copy a::after {
+		content: ": " attr(href); }
+	.build, .copyright, .footer {
+		display: flex; }
+	hr, .nav {
+		display: none; }
+	.build, .copyright {
+		padding-left: 1em;
+		padding-right: 1em; }
+	.build, .copy, .core, .copyright, .feature, .features, .heading, .item, .panel, .subheading, .subtitle, .toc {
+		font-family: Constantia, Palatino, 'Book Antiqua', 'Palatino Linotype', serif; }
+	.abbr, .added, .core, .dialog, .lists .features, .fixes, .issue, .kbd, .menus, .question, .settings, .tabular, .term, .thanks, .updates {
+		font-weight: bold; }
+	.logo svg {
+		height: 100px;
+		left: -10em;
+		position: relative;
+		width: 100px; }
+	.footer {
+		justify-content: center; }
+	.feature:last-child {
+		margin-bottom: 0; }
+	.cool .feature {
+		padding-bottom: 1em; }
+	.subtitle {
+		margin-left: -1.2em;
+		margin-top: -1em; }
+	.heading {
+		margin-left: 1.5em;
+		margin-top: -3em; }
+	.build a, .copyright span {
+		padding-left: 0.2em; }
+	.pb {
+		page-break-after: always; }
+	.header, .left, .right {
+		text-align: center; }
+	.left .copy, .right .copy {
+		text-align: left; }
+	.advanced, .email, .general {
+		width: 30%; }
+	.folderwiz, .snippetwiz {
+		width: 40%; }
+}
