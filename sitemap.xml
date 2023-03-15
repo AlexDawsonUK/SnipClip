@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://snipclipapp.com/</loc>
+		<loc>https://getsnipclip.com/</loc>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
-		<loc>https://snipclipapp.com/error.html</loc>
+		<loc>https://getsnipclip.com/error.html</loc>
 		<changefreq>weekly</changefreq>
 	</url>
 </urlset>

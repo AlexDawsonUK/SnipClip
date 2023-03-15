@@ -1,7 +1,7 @@
 {
 	"short_name": "SnipClip",
 	"name": "HiTechy SnipClip",
-	"start_url": "https://snipclipapp.com",
+	"start_url": "https://getsnipclip.com",
 	"description": "SnipClip is a code snippet manager for Windows that sits in the system tray, uses little memory and doesn't mess with the clipboard.",
 	"icons": [
 		{

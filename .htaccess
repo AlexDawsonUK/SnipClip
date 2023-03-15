@@ -44,10 +44,10 @@ AddDefaultCharset utf-8
 </IfModule>
 # Errors
 Options -MultiViews
-ErrorDocument 403 https://snipclipapp.com/error.html#403
-ErrorDocument 404 https://snipclipapp.com/error.html#404
-ErrorDocument 500 https://snipclipapp.com/error.html#500
-ErrorDocument 503 https://snipclipapp.com/error.html#503
+ErrorDocument 403 https://getsnipclip.com/error.html#403
+ErrorDocument 404 https://getsnipclip.com/error.html#404
+ErrorDocument 500 https://getsnipclip.com/error.html#500
+ErrorDocument 503 https://getsnipclip.com/error.html#503
 
 # Security
 <IfModule mod_autoindex.c>
