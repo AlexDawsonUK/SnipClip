@@ -4,8 +4,4 @@
 		<loc>https://getsnipclip.com/</loc>
 		<changefreq>weekly</changefreq>
 	</url>
-	<url>
-		<loc>https://getsnipclip.com/error.html</loc>
-		<changefreq>weekly</changefreq>
-	</url>
 </urlset>
