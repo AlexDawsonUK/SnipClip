@@ -1,2 +1,2 @@
 Contact: support@hitechy.com
-Acknowledgements: https://getsnipclip.com/humans.txt
+Acknowledgements: alexdawsonuk.github.io/SnipClip/humans.txt

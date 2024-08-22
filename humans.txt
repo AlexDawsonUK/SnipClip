@@ -19,4 +19,4 @@ Components:	None
 Software:	Zavala, MindNode, VSCode, Transmit, iTerm, Affinity, Icon Slate, ImageAlpha, ImageOptim, RightFont, Sip, BetterZip
 Services:	Martel (Typeface), Icon54 (Icons), IconFish Quadrata (Icons), FamFamFam Silk (Icons), Netlify, TSOHost (Daily.co.uk)
 Testing:	Chrome (Mac/PC), Firefox (Mac/PC), Safari (Mac/iOS), IE (11+)
-Updated:	https://getsnipclip.com/change.log
+Updated:	alexdawsonuk.github.io/SnipClip/change.log
